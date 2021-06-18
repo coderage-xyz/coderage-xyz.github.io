@@ -66,3 +66,23 @@
 {
 	width: 100%;
 }
+
+@media only screen and (max-width: 900px)
+{
+	.project
+	{
+		margin: 0;
+
+		width: auto;
+
+		border-radius: 0;
+	}
+
+	.project > img
+	{
+		display: block;
+		margin: 0 auto;
+
+		width: 384px;
+	}
+}
