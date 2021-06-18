@@ -1,0 +1,73 @@
+#intrologoload
+{
+	margin: 0;
+
+	width: 384px;
+	height: 384px;
+
+	position: absolute;
+
+	top: calc(50% - 192px);
+	left: calc(50% - 192px);
+
+	opacity: 0;
+
+	background-image: url("img/coderage_circle.png");
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	animation: logoMove ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes logoMove
+{
+	0%
+	{
+		opacity: 0;
+	}
+	25%
+	{
+		opacity: 1;
+
+		width: 384px;
+		height: 384px;
+
+		top: calc(50% - 192px);
+		left: calc(50% - 192px);
+	}
+	100%
+	{
+		opacity: 1;
+
+		width: 256px;
+		height: 256px;
+
+		top: 7em;
+		left: calc(50% - 128px);
+	}
+}
+
+#loadzone
+{
+	opacity: 0;
+
+	animation: fadeInAnimation ease 1s;
+	animation-delay: 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
