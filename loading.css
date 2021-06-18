@@ -17,7 +17,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 
-	animation: logoMove ease 1.5s;
+	animation: logoMove ease 0.75s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -54,8 +54,8 @@
 {
 	opacity: 0;
 
-	animation: fadeInAnimation ease 1s;
-	animation-delay: 1.5s;
+	animation: fadeInAnimation linear 0.25s;
+	animation-delay: 0.8s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
