@@ -1,0 +1,68 @@
+.project
+{
+	margin: 0 auto;
+
+	padding: 2em;
+
+	width: 75%;
+	max-width: 1024px;
+
+	border-radius: 2em;
+}
+
+.project > img
+{
+    margin: 0;
+
+    width: 35%;
+    
+    filter: drop-shadow(2px 2px 2px #191716);
+}
+
+.project > .info
+{
+	margin: 1em auto;
+	padding: 1.5em 1.25em;
+
+	border: 2px #F2EDEB solid;
+
+	border-radius: 2em;
+}
+
+.project > .info > p
+{
+    margin: auto;
+}
+
+#adrift { background: #ff7b00; }
+#adrift *::selection { background-color: #2170FE; }
+
+.slides
+{
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    border-radius: 2em;
+}
+
+.slides > div
+{
+    display: flex;
+    flex-shrink: 0;
+
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.slides > div > img
+{
+    width: 100%;
+}
