@@ -68,6 +68,11 @@ h1, h2, h3, p, a
 	text-shadow: 2px 2px #191716;
 }
 
+main
+{
+	padding-top: 3em;
+}
+
 main p
 {
 	font-family: "Roboto", sans-serif;

@@ -1,3 +1,8 @@
+main /* set back what I set in coderage.css */
+{
+	padding-top: 0;
+}
+
 #intrologoload
 {
 	margin: 0;
