@@ -1,16 +1,4 @@
-.project
-{
-	margin: 0 auto;
-
-	padding: 2em;
-
-	width: 75%;
-	max-width: 1024px;
-
-	border-radius: 2em;
-}
-
-.project > img
+.basic > img
 {
 	margin: 0 auto;
 
@@ -20,7 +8,7 @@
 	filter: drop-shadow(2px 2px 2px #191716);
 }
 
-.project > .info
+.basic > .info
 {
 	margin: 1em auto;
 	padding: 1.5em 1.25em;
@@ -30,7 +18,7 @@
 	border-radius: 2em;
 }
 
-.project > .info > p
+.basic > .info > p
 {
 	margin: auto;
 }
@@ -70,16 +58,7 @@
 
 @media only screen and (max-width: 900px)
 {
-	.project
-	{
-		margin: 0;
-
-		width: auto;
-
-		border-radius: 0;
-	}
-
-	.project > img
+	.basic > img
 	{
 		width: 80%;
 	}
