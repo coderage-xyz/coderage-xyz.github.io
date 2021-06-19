@@ -29,7 +29,7 @@ main
 
 		opacity: 0;
 
-		background-image: url("img/coderage_circle.png");
+		background-image: url("../img/coderage_circle.png");
 		background-position: center center;
 		background-size: 100%;
 		background-repeat: no-repeat;
