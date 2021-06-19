@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>coderage | Contact</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#2170FE">
+
+		<link rel="stylesheet" href="stylesheets/coderage.css">
+		<link rel="stylesheet" href="stylesheets/join.css">
+	</head>
+
+	<body>
+		<nav>
+			<a href="./">HOME</a>
+			<!-- <a href="about.html">ABOUT</a> -->
+			<a href="./portfolio.html">PORTFOLIO</a>
+			<a href="./join.html">JOIN US</a>
+			<a href="./contact.html">CONTACT</a>
+		</nav>
+
+		<main>
+			<div class="basic">
+				<p>
+					We're always looking for new talent. Tell us a little bit about your
+					work and we'll do our best to get back to you.
+				</p>
+
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" />
+
+					<br />
+
+					<label for="system">OS:</label>
+					<select name="system" id="system">
+						<option value="win">Windows</option>
+						<option value="mac">macOS</option>
+						<option value="linux">Linux</option>
+						<option value="other">Other</option>
+					</select>
+
+					<br />
+
+					<label>Skills:</label>
+					<div class="biglist">
+						<input type="checkbox" id="skills1" name="skills1" />
+						<label for="skills1">Environment Art</label>
+						<div class="listspacer"></div>
+
+						<input type="checkbox" id="skills2" name="skills2" />
+						<label for="skills2">Level Design</label>
+						<div class="listspacer"></div>
+
+						<input type="checkbox" id="skills3" name="skills3" />
+						<label for="skills3">Modeling</label>
+						<div class="listspacer"></div>
+
+						<input type="checkbox" id="skills4" name="skills4" />
+						<label for="skills4">Programming</label>
+						<div class="listspacer"></div>
+
+						<input type="checkbox" id="skills5" name="skills5" />
+						<label for="skills5">Video Editing</label>
+						<div class="listspacer"></div>
+
+						<input type="checkbox" id="skills6" name="skills6" />
+						<label for="skills6">Sound Design</label>
+					</div>
+
+					<br />
+
+					<label>Gender:</label>
+					<div class="biglist">
+						<input type="radio" id="male" name="gender" value="male" />
+						<label for="male">Male</label>
+						<div class="listspacer"></div>
+
+						<input type="radio" id="female" name="gender" value="female" />
+						<label for="female">Female</label>
+						<div class="listspacer"></div>
+
+						<input type="radio" id="other" name="gender" value="other" />
+						<label for="other">Other</label>
+					</div>
+
+					<br />
+
+					<label for="about">About Yourself:</label>
+					<textarea id="about" name="about" rows="8" placeholder="Tell us a bit about yourself."></textarea>
+
+					<br />
+
+					<div id="formbuttons">
+						<input type="reset" />
+						<input type="submit" />
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				&copy; 2021 John Kushmer
+			</p>
+		</footer>
+	</body>
+</html>
