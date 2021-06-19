@@ -3,76 +3,89 @@ main /* set back what I set in coderage.css */
 	padding-top: 0;
 }
 
-#intrologoload
+#intrologospace
 {
-	margin: 0;
-
-	width: 384px;
-	height: 384px;
-
-	position: absolute;
-
-	top: calc(50% - 192px);
-	left: calc(50% - 192px);
-
-	opacity: 0;
-
-	background-image: url("img/coderage_circle.png");
-	background-position: center center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-
-	animation: logoMove ease 0.75s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	display: none;
 }
 
-@keyframes logoMove
+@media only screen and (min-width: 900px)
 {
-	0%
+	#intrologospace
 	{
-		opacity: 0;
+		display: block;
 	}
-	25%
+
+	#intrologoload
 	{
-		opacity: 1;
+		margin: 0;
 
 		width: 384px;
 		height: 384px;
 
+		position: absolute;
+
 		top: calc(50% - 192px);
 		left: calc(50% - 192px);
+
+		opacity: 0;
+
+		background-image: url("img/coderage_circle.png");
+		background-position: center center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		animation: logoMove ease 0.75s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
 	}
-	100%
+
+	@keyframes logoMove
 	{
-		opacity: 1;
+		0%
+		{
+			opacity: 0;
+		}
+		25%
+		{
+			opacity: 1;
 
-		width: 256px;
-		height: 256px;
+			width: 384px;
+			height: 384px;
 
-		top: 7em;
-		left: calc(50% - 128px);
+			top: calc(50% - 192px);
+			left: calc(50% - 192px);
+		}
+		100%
+		{
+			opacity: 1;
+
+			width: 256px;
+			height: 256px;
+
+			top: 7em;
+			left: calc(50% - 128px);
+		}
 	}
-}
 
-#loadzone
-{
-	opacity: 0;
-
-	animation: fadeInAnimation linear 0.25s;
-	animation-delay: 0.8s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-}
-  
-@keyframes fadeInAnimation
-{
-	0%
+	#loadzone
 	{
 		opacity: 0;
+
+		animation: fadeInAnimation linear 0.25s;
+		animation-delay: 0.8s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
 	}
-	100%
+	
+	@keyframes fadeInAnimation
 	{
-		opacity: 1;
+		0%
+		{
+			opacity: 0;
+		}
+		100%
+		{
+			opacity: 1;
+		}
 	}
 }
