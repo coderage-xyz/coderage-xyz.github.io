@@ -41,6 +41,11 @@
 	border-radius: 2em;
 }
 
+.basic > .info:last-child
+{
+	margin-bottom: 0;
+}
+
 .basic table
 {
 	margin: auto auto 1.5em;
