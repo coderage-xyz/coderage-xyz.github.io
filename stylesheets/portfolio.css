@@ -1,30 +1,4 @@
-.basic > img
-{
-	margin: 0 auto;
-
-	display: block;
-	width: 384px;
-	
-	filter: drop-shadow(2px 2px 2px #191716);
-}
-
-.basic > .info
-{
-	margin: 1em auto;
-	padding: 1.5em 1.25em;
-
-	border: 2px #F2EDEB solid;
-
-	border-radius: 2em;
-}
-
-.basic > .info > p
-{
-	margin: auto;
-}
-
-#adrift { background: #ff7b00; }
-#adrift *::selection { background-color: #2170FE; }
+/* GENERAL */
 
 .slides
 {
@@ -56,10 +30,148 @@
 	width: 100%;
 }
 
+/* ADRIFT */
+
+.basic#adrift > .info > p
+{
+	margin: auto;
+}
+
+.basic#adrift > img
+{
+	margin: 0 auto;
+
+	display: block;
+	width: 384px;
+	
+	filter: drop-shadow(2px 2px 2px #191716);
+}
+
+.basic#adrift { background: #ff7b00; }
+.basic#adrift *::selection { background-color: #2170FE; }
+
 @media only screen and (max-width: 900px)
 {
-	.basic > img
+	.basic#adrift > img
 	{
 		width: 80%;
+	}
+}
+
+/* TTT */
+
+.basic#ttt > .info
+{
+	padding: 0 1.25em;
+}
+
+.basic#ttt > h1
+{
+	margin: auto;
+
+	font-family: 'Staatliches', cursive;
+	font-size: 2.5em;
+	font-weight: 300;
+	letter-spacing: 0.175em;
+
+	transform: scale(1, 1.1);
+
+	text-align: center;
+}
+
+.basic#ttt > img
+{
+	width: 100%;
+}
+
+.basic#ttt > video
+{
+	width: 100%;
+
+	border-radius: 2em;
+}
+
+.basic#ttt > h1,
+.basic#ttt > img,
+.basic#ttt > video
+{
+	filter: drop-shadow(0 0 4px black);
+}
+
+.basic#ttt table
+{
+	margin: auto auto 1.5em;
+	padding: 5px;
+
+	width: 100%;
+
+	/* border: 1px solid #C0C0C0; */
+	border-collapse: separate;
+	border-spacing: 16px;
+
+	filter: drop-shadow(0 0 4px black);
+}
+
+.basic#ttt table *
+{
+	font-family: 'Staatliches', cursive;
+	font-weight: 300;
+
+	font-size: 1.1em;
+
+	color: #F2EDEB;
+
+	text-shadow: 2px 2px #191716;
+}
+
+.basic#ttt table th
+{
+	width: 100px;
+}
+
+.basic#ttt table th:not(:first-child)
+{
+	padding: 5px;
+
+	background-color: #135be2;
+
+	/* border: 1px solid #C0C0C0; */
+	border-radius: 2em;
+}
+
+.basic#ttt table th#donator { background-color: #00AF00 }
+.basic#ttt table th#supporter { background-color: #005CC5 }
+.basic#ttt table th#premium { background-color: #6F42C1 }
+.basic#ttt table th#elite { background-color: #f1c232 }
+
+.basic#ttt table td
+{
+	padding: 5px;
+
+	background-color: #1056a7;
+
+	/* border: 1px solid #C0C0C0; */
+	border-radius: 2em;
+
+	text-align: center;
+}
+
+.basic#ttt table td.yes
+{
+	color: #00ff00;
+	text-shadow: 0 0 4px #00ff00;
+}
+
+.basic#ttt table td.no
+{
+	color: red;
+	text-shadow: 0 0 4px red;
+}
+
+@media only screen and (max-width: 900px)
+{
+	.basic#ttt table *
+	{
+		font-size: 1em;
 	}
 }

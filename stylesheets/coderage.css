@@ -240,6 +240,13 @@ footer > p
 	background-color: #2170FE;
 
 	border-radius: 2em;
+
+	filter: drop-shadow(0 0 8px black);
+}
+
+.basic:not(:last-child)
+{
+	margin-bottom: 3em;
 }
 
 .basic > p
@@ -267,6 +274,21 @@ footer > p
 .basic p > a::selection
 {
 	background-color: #bfd6ff;
+}
+
+.basic > .info
+{
+	margin: 1em auto;
+	padding: 1.5em 1.25em;
+
+	border: 2px #F2EDEB solid;
+
+	border-radius: 2em;
+}
+
+.basic > .info:last-child
+{
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 900px)
@@ -306,5 +328,7 @@ footer > p
 		width: auto;
 
 		border-radius: 0;
+
+		filter: none;
 	}
 }
