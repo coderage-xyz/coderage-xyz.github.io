@@ -1,5 +1,16 @@
 /* GENERAL */
 
+.sectionheader
+{
+	margin: 12em auto 3em;
+
+	display: block;
+
+	width: 75%;
+
+	filter: drop-shadow(0 0 10px black);
+}
+
 .slides
 {
 	display: flex;
