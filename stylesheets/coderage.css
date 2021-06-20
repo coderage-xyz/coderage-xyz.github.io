@@ -218,6 +218,47 @@ main p
 	opacity: 0.7;
 }
 
+#profilecontainer > div > h3
+{
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+
+	font-family: 'Staatliches', cursive;
+	font-size: 2em;
+	font-weight: 300;
+	letter-spacing: 0.175em;
+
+	transform: scale(1, 1.15);
+
+	text-align: center;
+
+	color: #F2EDEB;
+}
+
+#profilecontainer > div > ul
+{
+	padding-left: 0;
+}
+
+#profilecontainer > div > ul > li
+{
+	list-style-type: none;
+}
+
+#profilecontainer > div > ul > li p
+{
+	list-style-type: none;
+
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.3em;
+
+	transform: scale(1, 1.1);
+
+	text-align: center;
+}
+
 footer > p
 {
 	margin-top: 2em;
