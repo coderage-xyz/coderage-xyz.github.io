@@ -336,11 +336,17 @@ footer > p
 	.basic
 	{
 		margin: 0;
+		padding: 2em 1.25em;
 
 		width: auto;
 
 		border-radius: 0;
 
 		filter: none;
+	}
+
+	.basic > .info
+	{
+		border: none;
 	}
 }
