@@ -118,9 +118,19 @@ main p
 
 	flex: 50%;
 
+	background-color: #2170FE;
+
 	border: 2px #F2EDEB solid;
+	filter: none;
 
 	border-radius: 2em;
+
+	transition: filter 0.35s;
+}
+
+#profilecontainer > div:hover
+{
+	filter: drop-shadow(0 0 12px black);
 }
 
 #profilecontainer > div:nth-child(even)
@@ -211,6 +221,8 @@ main p
 	text-decoration: none;
 
 	border-radius: 50%;
+
+	transition: opacity 0.25s;
 }
 
 .fa:hover
