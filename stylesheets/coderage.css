@@ -120,8 +120,8 @@ main p
 
 	background-color: #2170FE;
 
-	border: 2px #F2EDEB solid;
-	filter: none;
+	border: 3px #F2EDEB outset;
+	filter: drop-shadow(0 0 4px black);
 
 	border-radius: 2em;
 
